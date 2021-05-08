@@ -1,0 +1,35 @@
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int consecutiveSetBits(int *arr, int num)
+{
+    int sum = 0 ;
+    int sumM = 0  ; 
+    for( int i = 0 ; i <= num-1 ; i++ )
+    {
+        sum = sumM ; 
+        sumM += arr[i] ;
+        if( sumM <= sum && i != 0 ){
+            sumM = 0 ;            
+        }
+        
+    }
+    return sumM ;
+}
+int main() {
+
+    int num ;
+    cin >> num ;
+    int arr[num] ; 
+    for( int i = 0 ; i <= num-1 ; i++)
+        cin >> arr[i] ;
+    cout<< consecutiveSetBits(arr , num ) ;
+
+    return 0;
+}
+
