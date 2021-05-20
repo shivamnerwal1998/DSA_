@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std ;
-
+/* In another program make
+ self refrential structure by class */
 struct bst
 {
     int info ;
