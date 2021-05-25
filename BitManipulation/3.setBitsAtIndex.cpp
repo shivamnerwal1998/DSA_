@@ -10,10 +10,11 @@ int main()
     cin >> index ;
     int f = 1 ;
     f = f << index ;
-    int res = (num & index) ;
+    int res = (num & f) ;
 
 
     if( res == 0 ){
+            cout<< res ;
         cout << "\nFalse" ;
     }
     else{
