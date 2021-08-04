@@ -10,7 +10,7 @@ public:
         for( int i = 1  ; i < nums.size() ; i++ )
         {
             preMax = maxSf ; 
-            maxSf = max( { nums[i] , nums[i] * maxSf , nums[i] * minSf } ) ;
+            maxSf = max( { nums[i] , nums[i] * maxSf , nums[i] * minSf } )  ; 
             minSf = min( { nums[i] , nums[i] * preMax , nums[i] * minSf } ) ;
             maxTh = max( maxTh ,  maxSf ) ; 
                 
