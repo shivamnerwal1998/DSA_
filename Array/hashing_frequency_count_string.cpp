@@ -27,11 +27,10 @@ int main()
             lowerArr[ int(str[i]) - 97 ] += 1 ;
         }
     }
-    for( int i = 0 ; i<=100 ; i++ )
-    {
+    for( int i = 0 ; i<=100 ; i++ ){
         if( numArr[i] > 0  )
         {
-            printf("%c-%d\n",i ,numArr[i]) ;
+            printf("%c-%d\n",i ,numArr[i]) ; // c - d ?
         }
     }
      for( int i = 0 ; i<26 ; i++ )
