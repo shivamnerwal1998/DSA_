@@ -56,4 +56,13 @@ SET stores unique elements and they  are stored in sorted order( Ascending / Dec
 
 **/ 
 
+/*
+    TO COPY S TO S2 ( another set  )
+    
+     unordered_set <int> s2( s.begin() , s.end() ) ;
+    for( it = s2.begin() ; it != s2.end() ; it++ )
+    {
+        cout<< *it<<" " ;
+    }
 
+*/
